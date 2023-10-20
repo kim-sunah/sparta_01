@@ -27,7 +27,7 @@ function search(event) {
         .then(response => response.json())
         .then(response => {
             response.results.filter(element => {
-                if (element.original_title.toUpperCase().includes(searchWord)) { return true }
+                return element.original_title.toUpperCase().includes(searchWord)
             }
             ).map(element => {
                 cardList.innerHTML += `
