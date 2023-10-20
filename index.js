@@ -35,6 +35,7 @@ function search(event) {
                     <img class = "movieImg" src = "https://image.tmdb.org/t/p/w500/${element.poster_path}"/>
                     <h3 class = "movieTtile">${element.original_title}</h3>
                     <p class = "movieTxt" >${element.overview}</p>
+                    <p class = "movieverage">Rating :  ${element.vote_average}</p>
                 </div>`
             });
         })
